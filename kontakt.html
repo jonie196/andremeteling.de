@@ -15,34 +15,96 @@
 <body>
   <!-- Navbar -->
   <nav>
-    <h2>André Meteling</h2>
-    <ul class="nav-list">
-      <li><a class="nav-link" href="index.html">Home</a></li>
-      <li><a class="nav-link" href="ueber-mich.html">About</a></li>
-      <li><a class="nav-link" href="angebot.html">Angebot</a></li>
-      <li><a class="nav-link" href="kontakt.html">Kontakt</a></li>
-      <li><a class="nav-link" href="blog.html">Blog</a></li>
-    </ul>
-    <div class="nav-icons">
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-linkedin"></i>
-    </div>
+    <section class="navbar">
+      <a href="index.html">
+        <h2 class="navbar-logo">André Meteling</h2>
+      </a>
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html">Start</a></li>
+        <li><a class="nav-link" href="ueber-mich.html">Über Mich</a></li>
+        <li><a class="nav-link" href="angebot.html">Angebot</a></li>
+        <li><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+        <!-- <li><a class="nav-link" href="blog.html"></a></li> -->
+      </ul>
+      <div class="termin">
+        <a href="kontakt.html"><i class="fas fa-calendar-check"></i>Kostenlosen Termin Vereinbaren</a>
+      </div>
+    </section>
+    <!-- End Of Navbar -->
+    <!-- Sidebar -->
+    <section class="sidebar">
+      <a href="index.html">
+        <h2 class="navbar-logo">André Meteling</h2>
+      </a>
+      <span class="nav-btn" id="nav-btn">
+        <i class="fas fa-bars"></i>
+      </span>
+    </section>
+    <asection class="sidebar-menu" id="sidebar-menu">
+      <span class="nav-close" id="nav-close">
+        <i class="fa fa-times"></i>
+      </span>
+      <ul class="sidemenu-list">
+        <li><a class="nav-link" href="index.html">Start</a></li>
+        <li><a class="nav-link" href="ueber-mich.html">Über Mich</a></li>
+        <li><a class="nav-link" href="angebot.html">Angebot</a></li>
+        <li><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+        <!-- <li><a class="nav-link" href="blog.html"></a></li> -->
+      </ul>
+      <div class="termin sidemenu-termin">
+        <a href="kontakt.html"><i class="fas fa-calendar-check"></i>Kostenlosen Termin Vereinbaren</a>
+      </div>
+    </asection>
+    <!-- End of Sidebar -->
   </nav>
+  <!-- End Of Navbar -->
   <header class="banner ueber-mich-banner">
     <section class="banner-content section-center ueber-mich-section">
-      <!-- <img class="logo" src="/img/logo.jpg" alt=""> -->
-      <i class="fas fa-bars"></i>
       <div class="banner-title">
         <h3 class="banner-heading"></h3>
         <h1 class="banner-heading">Kontakt </h1>
         <h2 class="banner-heading"></h2>
       </div>
-      <!-- <a class="btn banner-btn" href="#ueber-mich">Mehr Erfahren</a> -->
     </section>
   </header>
-
+  <!-- Kontakt -->
+  <section class="contact" id="contact">
+    <article class="section-center contact-center">
+      <article class="contact-form">
+        <h2>Termin Vereinbaren</h2>
+        <form action="">
+          <div class="form-group">
+            <input type="text" placeholder="Name" class="form-control" name="name">
+            <input type="email" placeholder="E-Mail" class="form-control" name="email">
+            <textarea name="message" placeholder="Message" cols="30" rows="5" class="form-control"></textarea>
+          </div>
+          <button type="submit" class="submit-btn btn">Senden</button>
+        </form>
+      </article>
+    </article>
+  </section>
+  <!-- End Of Kontakt -->
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="nav-icons">
+        <a href="https://www.facebook.com/ameteling"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/andremeteling/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/andre-meteling-04380b145/"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <h4 class="footer-text">
+        &copy; <span id="date"></span>
+        <span class="company">André Meteling</span>
+        <br> all rights reserved
+      </h4>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum |</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
+  <script src="/app.js"></script>
 </body>
 
 </html>

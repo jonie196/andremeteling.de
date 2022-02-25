@@ -7,99 +7,191 @@
   <title>André Meteling || Traumaberater</title>
   <!-- Css -->
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/normalize.css">
   <!-- Font Awesom -->
   <link rel="stylesheet" href="/fontawesome-free-6.0.0-beta3-web/css/all.css">
 </head>
 <body>
   <!-- Navbar -->
   <nav>
-    <h2>André Meteling</h2>
-    <ul class="nav-list">
-      <li><a class="nav-link" href="index.html">Home</a></li>
-      <li><a class="nav-link" href="ueber-mich.html">About</a></li>
-      <li><a class="nav-link" href="angebot.html">Angebot</a></li>
-      <li><a class="nav-link" href="kontakt.html">Kontakt</a></li>
-      <li><a class="nav-link" href="blog.html">Blog</a></li>
-    </ul>
-    <div class="nav-icons">
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-linkedin"></i>
-    </div>
+    <section class="navbar">
+      <a href="index.html"><h2 class="navbar-logo">André Meteling</h2></a>
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html">Start</a></li>
+        <li><a class="nav-link" href="ueber-mich.html">Über Mich</a></li>
+        <li><a class="nav-link" href="angebot.html">Angebot</a></li>
+        <li><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+        <!-- <li><a class="nav-link" href="blog.html"></a></li> -->
+      </ul>
+      <div class="termin">
+        <a href="kontakt.html"><i class="fas fa-calendar-check"></i>Kostenlosen Termin Vereinbaren</a>
+      </div>
+    </section>
+    <!-- End Of Navbar -->
+    <!-- Sidebar -->
+    <section class="sidebar">
+      <a href="index.html">
+        <h2 class="navbar-logo">André Meteling</h2>
+      </a>
+      <span class="nav-btn" id="nav-btn">
+        <i class="fas fa-bars"></i>
+      </span>
+    </section>
+    <asection class="sidebar-menu" id="sidebar-menu">
+      <span class="nav-close" id="nav-close">
+        <i class="fa fa-times"></i>
+      </span>
+      <ul class="sidemenu-list">
+        <li><a class="nav-link" href="index.html">Start</a></li>
+        <li><a class="nav-link" href="ueber-mich.html">Über Mich</a></li>
+        <li><a class="nav-link" href="angebot.html">Angebot</a></li>
+        <li><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+        <!-- <li><a class="nav-link" href="blog.html"></a></li> -->
+      </ul>
+      <div class="termin sidemenu-termin">
+        <a href="kontakt.html"><i class="fas fa-calendar-check"></i>Kostenlosen Termin Vereinbaren</a>
+      </div>
+    </asection>
+    <!-- End of Sidebar -->
   </nav>
+  <!-- End Of Navbar -->
   <!-- Banner -->
   <header class="banner">
     <section class="banner-content section-center">
-      <!-- <img class="logo" src="/img/logo.jpg" alt=""> -->
-      <i class="fas fa-bars"></i>
       <div class="banner-title">
-        <h3 class="banner-heading">Ein Lebe in mehr Leichtigkeit</h3>
-        <h1 class="banner-heading">Trauma Berater </h1>
-        <h2 class="banner-heading">André Meteling</h2>
+        <h1 class="banner-heading">»Ich frage mich«, sagte er, »ob die Sterne leuchten, damit jeder seinen eigenen eines Tages wiederfindet.«</h1>
+        <h4 class="banner-heading">Antoine de Saint-Exupéry: Der Kleine Prinz</h4>
+        <div class="devider"></div>
+        <a class="btn banner-btn" href="#kompetenzen">Mehr Erfahren</a>
+        <div class="nav-icons">
+          <a href="https://www.facebook.com/ameteling"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/andremeteling/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/andre-meteling-04380b145/"><i class="fab fa-linkedin"></i></a>
+        </div>
       </div>
-      <a class="btn banner-btn" href="#ueber-mich">Mehr Erfahren</a>
     </section>
   </header>
+  <!-- Kompetenzen -->
+  <section class="kompetenzen" id="kompetenzen">
+    <section class="section-center">
+      <!-- <div class="devider section-center"></div> -->
+      <h2 class="section-header">Meine <span class="accent-color">Dienstleistungen</span>  </h2>
+      <h3 class="quote">“Das Leben verlangt manchmal, dass wir Dinge wegstecken, wofür wir gar keine Taschen haben.”</h3>
+      <div class="devider"></div>
+      <article class="kompetenzen-content">
+        <ol class="section-list">
+          <li><i class="fas fa-check"></i> Burnout, depressiver Verstimmung, innerer Leere</li>
+          <li><i class="fas fa-check"></i> traumatischen Erlebnissen und Traumata</li>
+          <li><i class="fas fa-check"></i> psychosomatischen Beschwerden</li>
+          <li><i class="fas fa-check"></i> belastenden Lebenssituationen</li>
+          <li><i class="fas fa-check"></i> Stress, Unruhe, Ängste</li>
+          <li><i class="fas fa-check"></i> Entscheidungsfindung</li>
+          <li><i class="fas fa-check"></i> Neuorientierung</li>
+        </ol>
+        <!-- <img class="kompetenzen-img" src="/img/horses.jpeg" alt=""> -->
+      </article>
+      <div class="kompetenzen-btn">
+        <a class="btn" href="#contact">Kostenfreies Gespräch Vereinbaren</a>
+      </div>
+    </section>
+  </section>
+  <!-- End Of Kompentenzen -->
   <!-- Übeer Mich -->
-  <section class="einleitung section-center">
-    <article class="ueber-mich" id="ueber-mich">
+  <section class="ueber-mich">
+    <article class="ueber-mich-center section-center" id="ueber-mich">
       <!-- <h2 class="ueber-mich-header">Hier finden Sie Unterstützung und Beratung bei:</h2> -->
-      <img class="ueber-mich-img img" id="ueber-mich" src="/img/andre-sun.jpeg" alt="">
+      <img class="ueber-mich-img img" id="ueber-mich" src="/img/andre.jpg" alt="">
       <div class="ueber-mich-text">
+      <div class="ueber-mich-text-header">
+        <h1>André Meteling</h1>
+        <h4>Traumaberater und Psychologischer Coach</h4>
+        <div class="devider-background"></div>
+      </div>
       <h3 class="ueber-mich-text">Ein Thema liegt mir sehr am Herzen. Das „Trauma“; jeder ist mehr oder weniger traumatisiert. Doch es gibt schlimme Erlebnisse, die einen ohnmächtig machen. 
         
-      <span class="accent-color"> Als ausgebildeter Traumberater und psychologischer Coach, möchte ich Dir zur Seite stehen.</span></h3>
+       Als ausgebildeter Traumberater und psychologischer Coach, möchte ich Dir zur Seite stehen.</h3>
+      <img class="signature" src="/img/signature.png" alt="">
       <a href="ueber-mich.html" class="btn ueber-mich-btn">Mehr Über Mich</a>
       </div>
     </article>
   </section>
-  <div class="devider section-center"></div>
-  <!-- Kompetenzen -->
-  <section class="kompetenzen section-center">
-    <div class="background-color"></div>
-      <h2 class="section-header"><span class="accent-color">Meine</span> Kompetenzen</h2>
-      <article class="kompetenzen-content">
-      <ol class="section-list">
-        <li>traumatischen Erlebnissen und Traumata</li>
-        <li>belastenden Lebenssituationen (z.B. Trauer, Trennung, Umgang mit  Schicksalsschlägen)</li>
-        <li>Beziehungsproblemen, Ehekrise, Partnerschaftsproblemen</li>
-        <li>schweren Problemen oder schwierigen Entscheidungen</li>
-        <li>psychosomatischen Beschwerden</li>
-        <li>Burnout, depressiver Verstimmung, innerer Leere</li>
-        <li>Stress, emotionalen Erschöpfungszuständen, Unruhe und Schlafstörungen</li>
-        <li>Ängsten und Phobien</li>
-        <li>Neu-Orientierung (Sie möchten neue Perspektiven für sich entwickeln)</li>
-      </ol>
-      <img class="img" src="/img/calm-lake.jpeg" alt="">
-      </article>
-      <h3>Sprechen Sie mich jetzt an, wir finden gemeinsam einen Weg.</h3>
-      <div class="kompetenzen-btn">
-        <a class="btn" href="#">Kostenfreies Gespräch Vereinbaren</a>
-      </div>
-  </section>
-  <div class="devider section-center"></div>
+  <!-- End Of Ueber Mich -->
   <!-- Mein Angebot -->
-  <section class="mein-angebot">
-    <h2 class="section-header"><span class="accent-color">Meine</span> Angebote</h2>
-    <article class="mein-angebot-container section-center">
-      <div class="angebot">
-        <h3>Trauma Beratung</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis quibusdam et, harum sint dolores.</p>
-        <a class="mein-angebot-btn btn" href="meinangebot.html">mehr dazu</a>
-      </div>
-      <div class="angebot">
-        <h3>Psychologisches Coaching</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis quibusdam et, harum sint dolores.</p>
-        <a class="mein-angebot-btn btn" href="meinangebot.html">mehr dazu</a>
-      </div>
-    </article> 
+  <section class="mein-angebot section-center">
+    <h2 class="section-header">Mein <span class="accent-color">Angebot</span> </h2>
+    <p class="quote">“Das Trauma ist für mich wie ein Sandkorn, dass in eine Muschel eindringt und zur Perle wird. Nicht, weil Du es
+    bekämpfst, sondern, weil es liebevoll umschlossen zu Eigen gemacht wird”</p>
+    <div class="devider"></div>
+        <article class="mein-angebot-container section-center">
+          <div class="angebot">
+            <h2>Trauma Beratung</h2>
+            <div class="devider-background"></div>
+            <p>Jeder von uns erlebte schon ein mehr oder weniger schlimmes Trauma. Oftmals fühlen wir uns damit allein gelassen,
+              da wir
+              uns selbst und erst recht unser Umfeld uns nicht versteht.
+              Wir fühlen uns machtlos, ja starr und verstehen unser eigenes Verhalten und die entsprechenden Reaktionen nicht.
+              Ich
+              möchte Dir zur Seite stehen als jemand, der Dir proaktiv zuhört und Dir Instrumente an die Hand gibt, um mit
+              schwierigen
+              und belastenden Situationen umzugehen.
+            </p>
+            <a class="mein-angebot-btn btn" href="angebot.html">mehr dazu</a>
+          </div>
+          <div class="angebot">
+            <h2>Psychologisches Coaching</h2>
+            <div class="devider-background"></div>
+            <p p>Uns wird heute enorm viel abverlangt. Ob Beruf, Kinder oder Privatleben, alles muss perfekt sein und wir erst
+              recht.
+              Daraus entsteht oft ein sehr starke Druck und wir wissen zum Schluss nicht mehr wer wir sind oder wo wir überhaupt
+              hinwollen. Außergewöhnliche Lebensereignisse wie Trennung, Verlust des Arbeitsplatz oder Tod naher Verwandter
+              stürzen
+              uns dann schon mal in Krisen, wo es nicht einfach ist anschließend wieder Fuss zu fassen.
+              Ich stehe Dir als Begleiter zur Verfügung, um die Dinge aufzuarbeiten und sich neu auszurichten.
+            </p>
+            <a class="mein-angebot-btn btn" href="angebot.html">mehr dazu</a>
+          </div>
+        </article>
   </section>
-  <!-- Gespraech Banner -->
-  <section class="gespraech-banner">
-    <div class="gespraech-banner-text">
-      <h3>jetzt kostenfreien termin vereinbaren</h3>
+  <!-- End Of Mein Angebot -->
+  <!-- Kontakt -->
+  <section class="contact" id="contact">
+    <article class="section-center contact-center">
+      <h2 class="section-header"> <span class="accent-color">Kontakt</span> </h2>
+      <div class="devider-background"></div>
+      <article class="contact-form">
+        <h2> Kostenlosen Termin Vereinbaren</h2>
+        <form action="https://formspree.io/f/mvolaedj" method="POST">
+          <div class="form-group">
+            <input type="text" placeholder="Name" class="form-control" name="name">
+            <input type="email" placeholder="E-Mail" class="form-control" name="email">
+            <textarea name="message" placeholder="Nachricht" cols="30" rows="5" class="form-control"></textarea>
+          </div>
+          <button type="submit" class="submit-btn btn">Senden</button>
+        </form>
+      </article>
+    </article>
+  </section>
+  <!-- End Of Kontakt -->
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="nav-icons">
+        <a href="https://www.facebook.com/ameteling"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/andremeteling/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/andre-meteling-04380b145/"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <h4 class="footer-text">
+        &copy; <span id="date"></span>
+        <span class="company">André Meteling</span>
+        <br> all rights reserved
+      </h4>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum |</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
     </div>
-  </section>
+  </footer>
+  <!-- end of footer -->
+  <script src="/app.js"></script>
 </body>
 </html>

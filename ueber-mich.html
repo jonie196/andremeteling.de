@@ -14,25 +14,52 @@
 <body>
     <!-- Navbar -->
     <nav>
-      <h2>André Meteling</h2>
-      <ul class="nav-list">
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="ueber-mich.html">About</a></li>
-        <li><a class="nav-link" href="angebot.html">Angebot</a></li>
-        <li><a class="nav-link" href="kontakt.html">Kontakt</a></li>
-        <li><a class="nav-link" href="blog.html">Blog</a></li>
-      </ul>
-      <div class="nav-icons">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-linkedin"></i>
-      </div>
+      <section class="navbar">
+        <a href="index.html">
+          <h2 class="navbar-logo">André Meteling</h2>
+        </a>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Start</a></li>
+          <li><a class="nav-link" href="ueber-mich.html">Über Mich</a></li>
+          <li><a class="nav-link" href="angebot.html">Angebot</a></li>
+          <li><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+          <!-- <li><a class="nav-link" href="blog.html"></a></li> -->
+        </ul>
+        <div class="termin">
+          <a href="kontakt.html"><i class="fas fa-calendar-check"></i>Kostenlosen Termin Vereinbaren</a>
+        </div>
+      </section>
+      <!-- End Of Navbar -->
+      <!-- Sidebar -->
+      <section class="sidebar">
+        <a href="index.html">
+          <h2 class="navbar-logo">André Meteling</h2>
+        </a>
+        <span class="nav-btn" id="nav-btn">
+          <i class="fas fa-bars"></i>
+        </span>
+      </section>
+      <asection class="sidebar-menu" id="sidebar-menu">
+        <span class="nav-close" id="nav-close">
+          <i class="fa fa-times"></i>
+        </span>
+        <ul class="sidemenu-list">
+          <li><a class="nav-link" href="index.html">Start</a></li>
+          <li><a class="nav-link" href="ueber-mich.html">Über Mich</a></li>
+          <li><a class="nav-link" href="angebot.html">Angebot</a></li>
+          <li><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+          <!-- <li><a class="nav-link" href="blog.html"></a></li> -->
+        </ul>
+        <div class="termin sidemenu-termin">
+          <a href="kontakt.html"><i class="fas fa-calendar-check"></i>Kostenlosen Termin Vereinbaren</a>
+        </div>
+      </asection>
+      <!-- End of Sidebar -->
     </nav>
+    <!-- End Of Navbar -->
   <header class="banner ueber-mich-banner">
     <section class="banner-content section-center ueber-mich-section">
       <!-- <img class="logo" src="/img/logo.jpg" alt=""> -->
-      <i class="fas fa-bars"></i>
       <div class="banner-title">
         <h3 class="banner-heading"></h3>
         <h1 class="banner-heading">Über Mich </h1>
@@ -41,20 +68,89 @@
       <!-- <a class="btn banner-btn" href="#ueber-mich">Mehr Erfahren</a> -->
     </section>
   </header>
-  <section class="fortbildungen section-center">
-    <h2 class="section-header"><span class="accent-color">Meine</span> fortbildungen</h2>
-    <div class="section-grid">
-      <ul class="section-list">
-        <li>Gestalttherapie</li>
-        <li>reichianischer Körperarbeit</li>
-        <li>Traumaberater</li>
-        <li>Meditationslehrer</li>
-        <li>Teilearbeit und Transaktionsanalyse</li>
-        <li>Verhaltenstherapeutische Fortbildungen</li>
-        <li>systemische Arbeit</li>
-      </ul>
-      <img src="/img/tree.jpeg" class="img ueber-mich-img" alt="">
+      <!-- Ausbildungen -->
+  <section>
+    <section class="section-center">
+      <!-- <div class="devider section-center"></div> -->
+      <h2 class="section-header"><span class="accent-color">Meine</span> Ausbildungen:</h2>
+      <div class="devider"></div>
+      <div class="background-box">
+      <article class="ueber-mich-list">
+        <ol class="section-list ueber-mich-lists">
+          <li><i class="fas fa-check"></i> Traumaberater</li>
+          <li><i class="fas fa-check"></i> Meditationslehrer</li>
+          <li><i class="fas fa-check"></i> Trauerbegleiter</li>
+          <li><i class="fas fa-check"></i> Gestaltberatung</li>
+          <li><i class="fas fa-check"></i> Ego State Arbeit</li>
+          <li><i class="fas fa-check"></i> NLP</li>
+        </ol>  
+        <ol class="section-list ueber-mich-lists">
+          <li><i class="fas fa-check"></i> Verhaltenstherapie/DBT</li>
+          <li><i class="fas fa-check"></i> systemische Arbeit</li>
+          <li><i class="fas fa-check"></i> Körperarbeit</li>
+          <li><i class="fas fa-check"></i> Klinische Psychologie</li>
+          <li><i class="fas fa-check"></i> Mehrjährige Mitarbeit in einer Einrichtung für psychisch mehrfach beeinträchtigte Menschen</li>
+        </ol>
+        <!-- <img class="kompetenzen-img" src="/img/horses.jpeg" alt=""> -->
+      </article>
+      <div class="kompetenzen-btn">
+        <a class="mein-angebot-btn btn" href="kontakt.html">Kostenfreies Erstgespräch Buchen</a>
+      </div>
+      </div>
+    </section>
+  </section>
+  <!-- End Of Ausbildungen -->
+  <section class="background-color">
+    <div class="section-center-background">
+      <h2 class="section-header"><span class="accent-color">über mich</span> </h2>
+    <div class="devider-background"></div>
+    <p>
+      Mit jetzt 50 plus bin ich um die halbe Welt gereist.Durch den brasilianischen Regenwald bin ich mit einem Schamanen
+      gewandert, und mit Delphinen im indischen Ozean geschwommen. Affen haben mir in Costa Rica die Kekse geklaut, und viele
+      Male habe ich in Indonesien am Strand geschlafen. Als stolzer Vater meiner drei Söhne, darf ich sie auf ihrem Weg
+      begleiten. Einige Jahre lebte ich in einer Villa,doch ich lebte auch eine lange Zeit im Auto und einem Wohnwagen.So war
+      ich Tellerwäscher und Millionär.Ich kenne es es gut, im Rad des Lebens gefangen zu sein, viel zu verdienen, aber auch
+      Sklave seines Lebens zu sein.Ich weiss aber auch ganz genau, wie es ist nur 16 Cent für das   Wochenende in der Geldbörse
+      zu haben und Flaschen sammeln gehen zu müssen, um sich Lebensmittel kaufen zu können.
+    </p>
+    <br>
+    <p>
+      Schon als Jugendlicher interessierten mich die grossen Fragen des Lebens.Wer bin ich und wenn wie viele? Dieses
+      Interesse an den Lebensfragen und am Menschen begleiten mich schon mein ganzes Leben. Ich studierte das Leben, die
+      Menschen und mich selbst. Ich erlebte die Höhen und Tiefen des Lebens im Aussen und im Innen.Heute komme ich immer mehr
+      zur Ruhe und lebe in Frieden, denn in der Ruhe liegt die Kraft.
+    </p>
+    <br>
+    <p>
+      Als ich durch meine Täler ging und die Untiefen durchschritt fühlte ich mich oft allein. Bis heute begleiten mich
+      vergangene, teils furchtbare, Erlebnisse. Als Kind wurde ich auch geschlagen, mit einem Holzlöffel. Eines Tages zerbrach
+      meine Mutter dieser, als sie mich gerade damit schlug. Zu Weihnachten bekam ich als Vierjähriger einen neuen Holzlöffel.
+      Das war ein furchtbares traumatisierendes Erlebnis. Heute habe ich all diese Erlebnisse verarbeitet, anerkannt, je teils
+      die guten Dinge darin wertschätzen gelernt und integriert. Wir Alle tragen solche und schlimmere Erfahrungen in uns. Ich
+      möchte Dich dabei begleiten diese Erfahrungen, als Teil Deines Lebens, zu integrieren.
+    </p>
     </div>
   </section>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="nav-icons">
+        <a href="https://www.facebook.com/ameteling"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/andremeteling/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/andre-meteling-04380b145/"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <h4 class="footer-text">
+        &copy; <span id="date"></span>
+        <span class="company">André Meteling</span>
+        <br> all rights reserved
+      </h4>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum |</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
+  <script src="/app.js"></script>
 </body>
 </html>
