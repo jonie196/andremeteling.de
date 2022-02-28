@@ -10,12 +10,17 @@
   <link rel="stylesheet" href="/css/normalize.css">
   <!-- Font Awesom -->
   <link rel="stylesheet" href="/fontawesome-free-6.0.0-beta3-web/css/all.css">
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/favicon_io/site.webmanifest">
 </head>
 <body>
   <!-- Navbar -->
   <nav>
     <section class="navbar">
-      <a href="index.html"><h2 class="navbar-logo">André Meteling</h2></a>
+      <a href="index.html"><h2 class="navbar-logo">André Meteling</h2><h3>Traumaberater</h3></a>
       <ul class="nav-list">
         <li><a class="nav-link" href="index.html">Start</a></li>
         <li><a class="nav-link" href="ueber-mich.html">Über Mich</a></li>
@@ -32,6 +37,7 @@
     <section class="sidebar">
       <a href="index.html">
         <h2 class="navbar-logo">André Meteling</h2>
+        <h3>Traumaberater</h3>
       </a>
       <span class="nav-btn" id="nav-btn">
         <i class="fas fa-bars"></i>
@@ -72,7 +78,8 @@
     </section>
   </header>
   <!-- Kompetenzen -->
-  <section class="kompetenzen" id="kompetenzen">
+  <div id="kompetenzen"></div>
+  <section class="kompetenzen">
     <section class="section-center">
       <!-- <div class="devider section-center"></div> -->
       <h2 class="section-header">Meine <span class="accent-color">Dienstleistungen</span>  </h2>
@@ -88,28 +95,27 @@
           <li><i class="fas fa-check"></i> Entscheidungsfindung</li>
           <li><i class="fas fa-check"></i> Neuorientierung</li>
         </ol>
-        <!-- <img class="kompetenzen-img" src="/img/horses.jpeg" alt=""> -->
+        <div class="kompetenzen-btn">
+          <a class="btn" href="#contact">Kostenfreies Gespräch Vereinbaren</a>
+        </div>
       </article>
-      <div class="kompetenzen-btn">
-        <a class="btn" href="#contact">Kostenfreies Gespräch Vereinbaren</a>
-      </div>
     </section>
   </section>
   <!-- End Of Kompentenzen -->
   <!-- Übeer Mich -->
-  <section class="ueber-mich">
-    <article class="ueber-mich-center section-center" id="ueber-mich">
-      <!-- <h2 class="ueber-mich-header">Hier finden Sie Unterstützung und Beratung bei:</h2> -->
-      <img class="ueber-mich-img img" id="ueber-mich" src="/img/andre.jpg" alt="">
+  <section class="background-color ueber-mich">
+      <!-- <h2 class="section-header"> <span class="accent-color">Über Mich</span> <div class="devider-background"></div></h2> -->
+    <article class="ueber-mich-center" id="ueber-mich">
+      <img class="ueber-mich-img img" src="/img/andre.jpg" alt="">
       <div class="ueber-mich-text">
       <div class="ueber-mich-text-header">
+        
         <h1>André Meteling</h1>
         <h4>Traumaberater und Psychologischer Coach</h4>
-        <div class="devider-background"></div>
+  
       </div>
-      <h3 class="ueber-mich-text">Ein Thema liegt mir sehr am Herzen. Das „Trauma“; jeder ist mehr oder weniger traumatisiert. Doch es gibt schlimme Erlebnisse, die einen ohnmächtig machen. 
-        
-       Als ausgebildeter Traumberater und psychologischer Coach, möchte ich Dir zur Seite stehen.</h3>
+      <h4 class="ueber-mich-text">Ein Thema liegt mir sehr am Herzen.    Das „Trauma“; jeder ist mehr oder weniger traumatisiert. Doch es gibt schlimme Erlebnisse, die einen ohnmächtig machen. 
+      Als ausgebildeter Traumberater und psychologischer Coach, möchte ich Dir zur Seite stehen.</h4>
       <img class="signature" src="/img/signature.png" alt="">
       <a href="ueber-mich.html" class="btn ueber-mich-btn">Mehr Über Mich</a>
       </div>
@@ -160,7 +166,7 @@
       <div class="devider-background"></div>
       <article class="contact-form">
         <h2> Kostenlosen Termin Vereinbaren</h2>
-        <form action="https://formspree.io/f/mvolaedj" method="POST">
+        <form action="https://formspree.io/f/xwkybkjl" method="POST">
           <div class="form-group">
             <input type="text" placeholder="Name" class="form-control" name="name">
             <input type="email" placeholder="E-Mail" class="form-control" name="email">

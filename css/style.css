@@ -59,6 +59,9 @@ global styles
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  background: var(--dark-grey);
+}
 body {
   font-family: var(--font-primary);
   color: var(--grey-900);
@@ -80,11 +83,16 @@ h3 {
   font-size: 1.5rem;
   font-weight: 400;
 }
+h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
 p {
   margin-bottom: 1rem;
 }
 a {
   text-decoration: none;
+  color: var(--off-white);
 }
 /* .fas {
   font-size: 3rem;
@@ -128,8 +136,7 @@ a {
   font-weight: 400;
   text-transform: capitalize;
   line-height: 2.5rem;
-  margin-bottom: 2rem;
-  margin-left: 2rem;
+  margin: 2rem auto;
   list-style: none;
 }
 .btn {
@@ -167,7 +174,6 @@ a {
 .devider-background {
   border-bottom: 2px solid var(--accent-crl);
   max-width: 100%;
-  min-width: 15rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -192,7 +198,7 @@ a {
     font-size: 1rem;
   } */
   .section-header {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 
@@ -210,7 +216,7 @@ nav {
   grid-template-columns: 2fr 4fr 2fr;
   justify-items: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0.3rem;
   /* position: fixed; */
   top: 4rem;
   background: var(--dark-grey);
@@ -287,12 +293,13 @@ nav {
   display: none;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 1rem;
+  padding: 0.3rem 2rem;
   position: fixed;
   background: var(--dark-grey);
   width: 100vw;
   z-index: 1;
   opacity: 0.9;
+  justify-content: space-between;
 }
 .sidebar-logo {
   margin-left: 3rem;
@@ -306,7 +313,7 @@ nav {
   padding: 1rem 0;
   margin: 0;
   padding: 0;
-  margin-right: 3rem;
+  /* margin-right: 3rem; */
   color: var(--off-white);
   transition: var(--transition);
 }
@@ -325,7 +332,7 @@ nav {
     display: none;
   }
   .sidebar {
-    display: grid;
+    display: flex;
   }
 }
 /* Sidebar-Menu */
@@ -389,9 +396,9 @@ Banner
  */
 .banner {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: url(/img/274497505_5234873016531274_4426591187026220918_n.jpeg)
-    center/cover fixed no-repeat;
+    center/cover no-repeat;
   margin-top: -4rem;
 }
 .banner-content {
@@ -402,7 +409,7 @@ Banner
   justify-items: center;
 }
 .banner-title {
-  color: var(--accent-crl);
+  color: var(--dark-grey);
   text-align: center;
   max-width: 90%;
 }
@@ -437,11 +444,7 @@ Banner
 Ueber Mich
 ===========
  */
-.ueber-mich {
-  background: var(--dark-blue);
-  display: grid;
-  align-content: center;
-}
+
 .ueber-mich-center {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -449,15 +452,14 @@ Ueber Mich
   align-items: center;
   gap: 2rem;
   text-align: center;
+  padding: 4rem 1rem;
 }
 .ueber-mich-text {
   color: var(--off-white);
   display: grid;
-  padding: 0 1rem;
   place-items: center;
   text-align: center;
-  /* padding-bottom: 1rem;
-  border-bottom: 2px solid var(--accent-crl); */
+  max-width: 90%;
 }
 .ueber-mich-text-header {
   color: var(--accent-crl);
@@ -494,6 +496,9 @@ Ueber-Mich-Seite
 .ueber-mich-lists {
   margin: 0;
 }
+.ueber-mich-lists li {
+  color: var(--off-white);
+}
 .ueber-mich-lists .fa-check {
   color: var(--accent-crl);
 }
@@ -505,7 +510,7 @@ Dienstleistungen
 ===========
  */
 .background-color {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background: var(--dark-blue);
 }
@@ -517,13 +522,11 @@ Dienstleistungen
 }
 .kompetenzen-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 2rem;
-  align-items: center;
-  justify-items: center;
+  grid-template-columns: 1fr;
+  place-items: center;
   margin: 3rem auto;
+  padding: 2rem 0;
   margin-bottom: 0;
-  border: 2px solid var(--grey-light);
   border-radius: 5px;
 }
 .kompetenzen-btn {
@@ -537,6 +540,7 @@ Dienstleistungen
   font-weight: 400;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
+  color: var(--accent-crl);
 }
 .section-list i {
   color: var(--dark-blue);
@@ -544,7 +548,7 @@ Dienstleistungen
 }
 @media screen and (max-width: 750px) {
   .section-list li {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 /* 
@@ -606,7 +610,7 @@ Kontakt
  */
 .contact {
   background: var(--dark-blue);
-  height: 75vh;
+  height: 90vh;
   display: grid;
   justify-items: center;
   align-items: flex-start;
@@ -622,7 +626,7 @@ Kontakt
 .contact-form {
   border-radius: var(--border-radius);
   text-align: center;
-  max-width: 75%;
+  max-width: 100%;
 }
 .contact-form h2 {
   padding: 1.25rem;
@@ -691,3 +695,18 @@ Footer
 Impressum
 ==============
  */
+.impressum {
+  height: 120vh;
+  margin-top: 0rem;
+  display: grid;
+  place-content: center;
+  row-gap: 1rem;
+  padding-top: 6rem;
+}
+.datenschutz {
+  height: 100vh;
+  margin-top: 0rem;
+  display: grid;
+  place-content: center;
+  row-gap: 1rem;
+}
