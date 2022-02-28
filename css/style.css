@@ -686,7 +686,7 @@ Footer
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  height: 40vh;
+  height: 35vh;
 }
 .footer-container {
   display: grid;
@@ -716,7 +716,7 @@ Impressum
 ==============
  */
 .impressum {
-  height: 120vh;
+  height: 220vh;
   margin-top: 0rem;
   display: grid;
   place-content: center;
