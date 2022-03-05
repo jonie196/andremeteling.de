@@ -130,6 +130,7 @@ a {
   min-width: 20rem;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 .section-list {
   font-size: 1rem;
@@ -169,13 +170,13 @@ a {
 }
 .devider {
   border-bottom: 2px solid var(--dark-blue);
-  max-width: 100%;
+  max-width: 90%;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 .devider-background {
   border-bottom: 2px solid var(--accent-crl);
-  width: 100%;
+  width: 90%;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -187,7 +188,7 @@ a {
 }
 @media screen and (max-width: 750px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   h2 {
     font-size: 1.75rem;
@@ -201,6 +202,28 @@ a {
   } */
   .section-header {
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section-header {
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .banner-heading {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (max-height: 740px) {
+  .banner-heading {
+    font-size: 1.5rem;
   }
 }
 
@@ -412,6 +435,7 @@ Banner
   justify-items: center;
 }
 .banner-title {
+  padding-top: 4rem;
   color: var(--dark-grey);
   text-align: center;
   max-width: 90%;
@@ -448,15 +472,15 @@ Banner
 Ueber Mich
 ===========
  */
-
 .ueber-mich-center {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
   gap: 2rem;
   text-align: center;
   padding: 4rem 1rem;
+  background: var(--dark-blue);
 }
 .ueber-mich-text {
   color: var(--off-white);
@@ -480,6 +504,11 @@ Ueber Mich
 }
 .ueber-mich-btn {
   background: var(--accent-crl);
+}
+@media screen and (max-width: 1023px) {
+  .ueber-mich-center {
+    grid-template-columns: 1fr;
+  }
 }
 /* 
 ===========
@@ -614,7 +643,7 @@ Kontakt
  */
 .contact {
   background: var(--dark-blue);
-  height: 90vh;
+  height: 90%;
   display: grid;
   justify-items: center;
   align-items: flex-start;
@@ -623,6 +652,7 @@ Kontakt
 .contact-center {
   display: grid;
   place-items: center;
+  max-width: 90%;
 }
 .contact-center h2 {
   margin-bottom: 0;
@@ -630,7 +660,7 @@ Kontakt
 .contact-form {
   border-radius: var(--border-radius);
   text-align: center;
-  max-width: 100%;
+  max-width: 90%;
 }
 .contact-form h2 {
   padding: 1.25rem;
@@ -641,7 +671,7 @@ Kontakt
   padding: 1rem 1.5rem;
 }
 .form-control {
-  width: 100%;
+  width: 90%;
   padding: 0.75rem 1rem;
   border: none;
   margin-bottom: 1rem;
@@ -686,7 +716,8 @@ Footer
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  height: 35vh;
+  margin-bottom: 4rem;
+  /* min-height: 35vh; */
 }
 .footer-container {
   display: grid;
