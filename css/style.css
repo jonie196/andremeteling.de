@@ -520,7 +520,7 @@ Ueber-Mich-Seite
 }
 .ueber-mich-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: 1fr 1fr;
   place-items: start;
   background: var(--dark-blue);
   color: var(--off-white);
@@ -538,6 +538,11 @@ Ueber-Mich-Seite
 }
 .section-center-background p {
   color: var(--off-white);
+}
+@media screen and (max-width: 550px) {
+  .ueber-mich-list {
+    grid-template-columns: 1fr;
+  }
 }
 /* ===========
 Dienstleistungen
@@ -747,7 +752,7 @@ Impressum
 ==============
  */
 .impressum {
-  height: 220vh;
+  height: 100%;
   margin-top: 0rem;
   display: grid;
   place-content: center;
@@ -755,9 +760,10 @@ Impressum
   padding-top: 6rem;
 }
 .datenschutz {
-  height: 100vh;
+  height: 100%;
   margin-top: 0rem;
   display: grid;
   place-content: center;
   row-gap: 1rem;
+  padding-top: 6rem;
 }
